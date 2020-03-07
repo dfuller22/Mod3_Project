@@ -150,3 +150,15 @@ def prep_data_for_tukeys(data):
     df_tukey['group'] = df_tukey['group'].astype('str')
     df_tukey['data'] = df_tukey['data'].astype('float')
     return df_tukey
+
+def diction_to_df(diction, col_list):
+    import pandas as pd
+    
+    tst = []
+    
+    for key, val in diction.items():
+        for item in val:
+            tst.append((key, item))
+    
+    df_fin = pd.DataFrame.from_records(data=tst, columns=col_list)
+    return df_fin
