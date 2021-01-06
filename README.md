@@ -31,7 +31,7 @@ conn = sqlite3.Connection('Northwind_small.sqlite')
 cur = sqlite3.Cursor(conn)
 ```
 
-![image.png](attachment:image.png)
+![png](Images/Northwind_ERD_updated.png)
 
 
 ```python
@@ -351,7 +351,7 @@ plt.title('Avg. Quantity: Discounted vs Full Price');
 ```
 
 
-![png](Mod3_Proj_files/Mod3_Proj_17_0.png)
+![png](Images/Mod3_Proj_17_0.png)
 
 
 > In order to have a more flexible instance of my target data, I need to move the information from the DataFrame into a python dictionary.
@@ -397,7 +397,7 @@ ax.legend();
 ```
 
 
-![png](Mod3_Proj_files/Mod3_Proj_24_0.png)
+![png](Images/Mod3_Proj_24_0.png)
 
 
 > Although skewed, the tails do not look very thick, will remove some outliers to try for better normality since I have a lot of data still.
@@ -448,7 +448,7 @@ ax.legend();
 ```
 
 
-![png](Mod3_Proj_files/Mod3_Proj_29_0.png)
+![png](Images/Mod3_Proj_29_0.png)
 
 
 > The data looks a lot closer to standard normal. Now I can move forward to test normality.
@@ -974,7 +974,7 @@ plt.title('Avg. TotalSpent: Discounted vs Full Price');
 ```
 
 
-![png](Mod3_Proj_files/Mod3_Proj_60_0.png)
+![png](Images/Mod3_Proj_60_0.png)
 
 
 > Converting to a dictionary for flexibility (as before)
@@ -1020,7 +1020,7 @@ ax.legend();
 ```
 
 
-![png](Mod3_Proj_files/Mod3_Proj_67_0.png)
+![png](Images/Mod3_Proj_67_0.png)
 
 
 > This is *highly* skewed to the right, although very thin. 
@@ -1071,7 +1071,7 @@ ax.legend();
 ```
 
 
-![png](Mod3_Proj_files/Mod3_Proj_72_0.png)
+![png](Images/Mod3_Proj_72_0.png)
 
 
 > Although, if compared to the standard normal distribution, the data is still pretty skewed to the right. I will move forward with testing assumptions.
@@ -1471,7 +1471,7 @@ plt.title('Avg. Quantity: By Region');
 ```
 
 
-![png](Mod3_Proj_files/Mod3_Proj_99_0.png)
+![png](Images/Mod3_Proj_99_0.png)
 
 
 
@@ -1486,7 +1486,7 @@ plt.title('Quantity: By Region');
 ```
 
 
-![png](Mod3_Proj_files/Mod3_Proj_100_0.png)
+![png](Images/Mod3_Proj_100_0.png)
 
 
 
@@ -1528,7 +1528,7 @@ ax.legend();
 ```
 
 
-![png](Mod3_Proj_files/Mod3_Proj_106_0.png)
+![png](Images/Mod3_Proj_106_0.png)
 
 
 > All of the groups appear to have a similar level of skew and weight in the right tail. There is one item for the Eastern group that hangs pretty far into the tail, I am interested to see whether or not it will fall off after outliers are removed.
@@ -1572,7 +1572,7 @@ ax.legend();
 ```
 
 
-![png](Mod3_Proj_files/Mod3_Proj_110_0.png)
+![png](Images/Mod3_Proj_110_0.png)
 
 
 > My function removed a large bit of the tails, and visually I can see that the Northern/Eastern groups do not skew out as far as the other two groups.
@@ -1871,7 +1871,7 @@ plt.title('Avg. TotalSpent: By ReorderLevel');
 ```
 
 
-![png](Mod3_Proj_files/Mod3_Proj_137_0.png)
+![png](Images/Mod3_Proj_137_0.png)
 
 
 
@@ -1886,7 +1886,7 @@ plt.title('TotalSpent: By ReorderLevel');
 ```
 
 
-![png](Mod3_Proj_files/Mod3_Proj_138_0.png)
+![png](Images/Mod3_Proj_138_0.png)
 
 
 
@@ -1935,7 +1935,7 @@ ax.legend();
 ```
 
 
-![png](Mod3_Proj_files/Mod3_Proj_144_0.png)
+![png](Images/Mod3_Proj_144_0.png)
 
 
 > The extreme values in one or more of the reorder levels are skewing the distribution strongly. It seems best to remove them to ensure I get closer in the normality test.
@@ -2004,7 +2004,7 @@ plt.tight_layout()
     
 
 
-![png](Mod3_Proj_files/Mod3_Proj_149_1.png)
+![png](Images/Mod3_Proj_149_1.png)
 
 
 > Visually it appears that there are some similarities between the groups I selected arbitrarily by numeric value. For the unit level of 5, there is a high amount that spikes around zero TotalSpent, while there is a long tail created by 15. 
@@ -2343,7 +2343,7 @@ plt.title('Avg. Quantity: By Salesperson');
 ```
 
 
-![png](Mod3_Proj_files/Mod3_Proj_176_0.png)
+![png](Images/Mod3_Proj_176_0.png)
 
 
 
@@ -2354,7 +2354,7 @@ plt.title('Avg. Quantity: By Salesperson');
 ```
 
 
-![png](Mod3_Proj_files/Mod3_Proj_177_0.png)
+![png](Images/Mod3_Proj_177_0.png)
 
 
 > There appears to be some differences, albeit slight, for each employee in regards to quanity sold per order. The swarmplot shows what looks to be a fairly even distribution between each of the employees. The error bars in the barplot indicate that these differences may be 'give-or-take' around the same level. 
@@ -2369,7 +2369,7 @@ plt.title('Avg. TotalSpent: By Salesperson');
 ```
 
 
-![png](Mod3_Proj_files/Mod3_Proj_179_0.png)
+![png](Images/Mod3_Proj_179_0.png)
 
 
 
@@ -2380,7 +2380,7 @@ plt.title('Avg. TotalSpent: By Salesperson');
 ```
 
 
-![png](Mod3_Proj_files/Mod3_Proj_180_0.png)
+![png](Images/Mod3_Proj_180_0.png)
 
 
 > Visually speaking, the TotalSpent category show a lot more variation on the barplot between employees. The swarmplot however, tells a story that appears to indicate not much of a difference between the individual employees. 
@@ -2455,7 +2455,7 @@ ax.legend();
 ```
 
 
-![png](Mod3_Proj_files/Mod3_Proj_190_0.png)
+![png](Images/Mod3_Proj_190_0.png)
 
 
 > It appears that this data is fairly normal, I do not expect too many outliers to be pulled from the right tail.
@@ -2472,7 +2472,7 @@ ax.legend();
 ```
 
 
-![png](Mod3_Proj_files/Mod3_Proj_192_0.png)
+![png](Images/Mod3_Proj_192_0.png)
 
 
 > This set appears to be *way* more skewed than the quantity data. I expect our outlier remove to cut a decent bit off of the right-side tail.
@@ -2557,7 +2557,7 @@ plt.tight_layout()
     
 
 
-![png](Mod3_Proj_files/Mod3_Proj_198_1.png)
+![png](Images/Mod3_Proj_198_1.png)
 
 
 > Looking at these graphs, it appears that employees 5, 6, and 8 have a higher percentage of their orders being quantities less than 20. Otherwise both groups seem to be about the same.
@@ -2596,7 +2596,7 @@ plt.tight_layout()
     
 
 
-![png](Mod3_Proj_files/Mod3_Proj_201_1.png)
+![png](Images/Mod3_Proj_201_1.png)
 
 
 > Visually, these two groups appear to be quite similar. The second group just has a bit longer of a right-tail due to a few instances.
